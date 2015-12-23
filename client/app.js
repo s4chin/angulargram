@@ -1,20 +1,20 @@
-angular.module("Angulargram", ['ngRoute', 'ngMessages'])
+angular.module('Angulargram', ['ngRoute', 'ngMessages'])
   .config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        tempateUrl: 'views/home.html',
+        templateUrl: 'views/home.html',
         controller: 'HomeCtrl'
       })
       .when('/login', {
-        tempateUrl: 'views/login.html',
+        templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
       .when('/signup', {
-        tempateUrl: 'views/signup.html',
+        templateUrl: 'views/signup.html',
         controller: 'SignupCtrl'
       })
       .when('/photo/:id', {
-        tempateUrl: 'views/details.html',
+        templateUrl: 'views/detail.html',
         controller: 'DetailCtrl'
       })
       .otherwise('/');
